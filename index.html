@@ -32,7 +32,7 @@
       }
     </style>
 <!-- Navbar -->
-<nav class="px-4 py-3 flex justify-between items-center uppercase">
+<nav class="relative px-4 py-3 flex justify-between items-center uppercase">
   <div class="text-lg font-bold">Pizza Restaurant</div>
 
   <!-- Menu (desktop) -->
@@ -53,7 +53,18 @@
   </div>
 
   <!-- Mobile menu icon -->
-  <div class="md:hidden text-2xl">☰</div>
+  <div id="mob_menu" class="md:hidden text-2xl">☰</div>
+  <!-- Mobile Menu -->
+<div id="mobile_nav"
+  class="hidden absolute top-full left-0 w-full bg-black text-white justify-center items-center
+         flex flex-col gap-4 px-6 py-6 uppercase md:hidden z-50">
+  <a href="#about">About Us</a>
+  <a href="#menu">Menu</a>
+  <a href="#">Blogs</a>
+  <a href="#">Testimony</a>
+  <a href="#findus">Find Us</a>
+  <a href="#">Our Team</a>
+</div>
 </nav>
 
 <!-- Hero Section -->
@@ -268,7 +279,14 @@ const html = items.map((ele, idx) => `
 
 menu.innerHTML = html;
 
+const mob_menu = document.querySelector("#mob_menu");
+const mobile_nav = document.querySelector("#mobile_nav");
+
+mob_menu.addEventListener("click", () => {
+  mobile_nav.classList.toggle("hidden");
+});
       
     </script>
   </body>
 </html>
+
