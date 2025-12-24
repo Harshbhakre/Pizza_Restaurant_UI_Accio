@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Pizza Restaurant UI</title>
+  </head>
+  <body class="bg-black text-white font-[Ruda] transition-all duration-300 scroll-smooth">
+    <style>
+.bootstrap-scope {
+  all: revert;
+}
+</style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ruda:wght@400..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&family=Ruda:wght@400..900&display=swap");
+    </style>
+    <style>
+      .hero-bg {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)
+          ),
+          url("./assets/hero-bg.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    </style>
+<!-- Navbar -->
+<nav class="px-4 py-3 flex justify-between items-center uppercase">
+  <div class="text-lg font-bold">Pizza Restaurant</div>
+
+  <!-- Menu (desktop) -->
+  <div class="hidden md:flex gap-6">
+    <a href="#about">About Us</a>
+    <a href="#Menu">Menu</a>
+    <a href="">Blogs</a>
+    <a href="#">Testimony</a>
+    <a href="#findus">Find Us</a>
+    <a href="#">Our Team</a>
+  </div>
+
+  <!-- Social icons -->
+  <div class="hidden md:flex gap-3">
+    <img class="h-8 hover:scale-105 " src="./assets/insta.png" />
+    <img class="h-8 hover:scale-105 " src="./assets/facebook.png" />
+    <img class="h-8 hover:scale-105 " src="./assets/whatsapp.png" />
+  </div>
+
+  <!-- Mobile menu icon -->
+  <div class="md:hidden text-2xl">☰</div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero-bg min-h-screen w-full flex items-center px-4">
+  <div class="w-full md:w-1/2 flex flex-col gap-6">
+    <h1 class="font-[Quattrocento] text-4xl md:text-6xl font-semibold leading-tight">
+      Craving for a cheesy pizza?
+    </h1>
+
+    <span class="block h-2 w-2/3 bg-[#F24C4C]"></span>
+
+    <p class="text-sm md:text-base max-w-md">
+      Enjoy hot, freshly baked pizzas loaded with rich cheese and delicious
+      toppings. Every slice is made fresh and full of flavor.
+    </p>
+  </div>
+</div>
+
+
+    <!---About Section-->
+
+    <div id="about" class="h-max w-full">
+      <div class="flex flex-col justify-center items-center w-full h-40">
+        <h1 class="font-[Quattrocento] text-[4vh] font-semibold leading-15">
+          About
+        </h1>
+        <span class="block h-2 w-1/4 bg-[#B62828]"></span>
+      </div>
+      <div class="flex items-start flex-wrap sm:flex-nowrap justify-center sm:gap-x-50  h-max">
+        <div class="sm:w-1/2 h-max flex flex-col items-center sm:items-end gap-y-3 sm:pt-4">
+          <span class="block h-[1px] w-[60%] bg-[#F24C4C]"></span>
+          <p class="sm:w-[60%] w-[90%] h-max opacity-90 sm:text-xl">
+            We’re a passion-driven pizza place bringing you fresh, flavorful,
+            and cheesy goodness every day. We use quality ingredients,
+            hand-rolled dough, and authentic sauces to make every slice
+            unforgettable. Whether you’re dining in or grabbing a quick bite, we
+            serve warm flavors, friendly vibes, and a taste that keeps you
+            coming back for more.
+          </p>
+        </div>
+        <div class="sm:w-1/2 w-[90%] h-max sm:mt-0 mt-4">
+          <img class="h-max w-max" src="./assets/aboutsection.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--Menu-->
+    <div id="Menu" class="h-max bg-red- w-full sm:mt-0 mt-8">
+      <div class="flex flex-col justify-center items-center w-full h-60">
+        <div class="w-full h-full flex items-center justify-center flex-col">
+          <h1 class="font-[Quattrocento] text-[4vh] font-semibold">
+          Menu
+        </h1>
+        <span class="block h-2 w-1/4 bg-[#B62828]"></span>
+        </div>
+        <p class="sm:w-[65%] w-[90%]">
+          Explore the wide range of pizza baked in fresh dough and vegetables.
+          Our pizza will tempt all your excitement and senses. Made with a
+          delicate balance of everything cheesy and spicy, you will get to
+          savour the best pizza in town.
+        </p>
+      </div>
+      <div id="menu" class="w-full h-max flex flex-wrap justify-center items-center">
+        
+      </div>
+    </div>
+  <!--Carousel-->
+
+  <div class="h-max w-full bootstrap-scope">
+    
+      <div class="flex flex-col justify-center items-center w-full h-40">
+        <h1 class="font-[Quattrocento] text-[4vh] font-semibold leading-15">
+          Carousel
+        </h1>
+        <span class="block h-2 w-1/4 bg-[#B62828]"></span>
+      </div>
+     
+<iframe 
+  src="./carousel.html"
+  class="w-full h-screen border-none overflow-hidden">
+</iframe>
+ 
+      </div>
+
+ <div class="h-150 w-full">
+      <div class="flex flex-col justify-center items-center w-full h-40">
+        <h1 class="font-[Quattrocento] text-[4vh] font-semibold leading-15">
+          Galary
+        </h1>
+        <span class="block h-2 w-1/4 bg-[#B62828]"></span>
+      </div>
+     <!-- Gallery Container -->
+<div class="w-full flex justify-center">
+  <div class="w-[90%] grid grid-cols-1 md:grid-cols-3 gap-4">
+
+    <!-- BIG Left Image -->
+    <div class="md:col-span-2">
+      <img src="./assets/menu1.jpg" 
+           class="w-full  bg-cover bg-center rounded-xl" />
+    </div>
+
+    <!-- Right 6 Images Grid -->
+    <div class="grid grid-cols-2 gap-4">
+
+      <img src="./assets/menu2.jpg" 
+           class="w-full h-40 object-cover rounded-xl" />
+
+      <img src="./assets/menu4.jpg" 
+           class="w-full h-40 object-cover rounded-xl" />
+
+      <img src="./assets/menu5.jpg" 
+           class="w-full h-40 object-cover rounded-xl" />
+
+      <img src="./assets/menu6.jpg" 
+           class="w-full h-40 object-cover rounded-xl" />
+
+      <img src="./assets/menu3.jpg" 
+           class="w-full h-40 object-cover rounded-xl" />
+
+  </div>
+</div>
+
+      </div>
+
+      <!-- About us Container -->
+      <div id="findus" class="h-180 sm:h-150 w-full">
+      <div class="flex flex-col justify-center items-center w-full h-40">
+        <h1 class="font-[Quattrocento] text-[4vh] leading-15">
+          FIND US
+        </h1>
+        <span class="block h-2 w-1/4 bg-[#B62828]"></span>
+      </div>
+
+      <div class="h-80 w-full flex flex-wrap justify-around items-center px-2 sm:px-0">
+        <div class="w-100 h-70 flex flex-col gap-y-5 sm:text-xl text-sm">
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text e.</p>
+          <p class="flex items-center gap-x-2"><img src="./assets/loc.png" class=" h-8" alt=""> Location XYZ, XYZ Colony, Delhi</p>
+          <div class="flex items-center gap-x-2">
+            <img class="h-8" src="./assets/phone.png" alt="">
+            <div>
+              <p>123-456-789</p>
+              <p>123-456-789</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center border-1 border-white w-120 text-black"><img src="./assets/map.png" alt=""></div>
+      </div>
+
+
+
+      </div>
+
+      <!-- Footer Container -->
+       <div class="h-40  sm:h-60 w-full flex items-center justify-around sm:gap-x-100">
+<img class="h-20 sm:h-40" src="./assets/footer man.png" alt="">
+<div class=" sm:text-xl text-sm">
+  <p class="flex items-center gap-x-6"><img src="./assets/msg.png" class="h-4 sm:h-8" alt="">mailid@gmail.com</p>
+  <div class="flex items-center gap-x-6">
+            <img class="h-4 sm:h-8" src="./assets/phone.png" alt="">
+            <div>
+              <p>123-456-789</p>
+              <p>123-456-789</p>
+            </div>
+          </div>
+</div>
+       </div>
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module">
+      const items = [
+  {
+    title: "Classic Veg Pizza",
+    img: "pizza1.jpg",
+    desc: "Loaded with fresh veggies, cheese, and herbs baked to perfection."
+  },
+  {
+    title: "Cheese Burst Pizza",
+    img: "pizza2.jpg",
+    desc: "A rich cheese-filled base topped with spicy veggies and seasoning."
+  },
+  {
+    title: "Stuffed Garlic Bread",
+    img: "calzone1.jpg",
+    desc: "Soft garlic bread stuffed with cheese and herbs, served hot."
+  },
+  {
+    title: "Cheese Calzone Pocket",
+    img: "calzone2.jpg",
+    desc: "Crispy baked calzone filled with molten cheese and Italian spices."
+  },
+  {
+    title: "Fresh Veg Salad",
+    img: "salad.jpg",
+    desc: "A refreshing bowl with lettuce, olives, paneer, and crunchy veggies."
+  },
+  {
+    title: "Chocolate Milkshake",
+    img: "shake.jpg",
+    desc: "Thick creamy milkshake blended with rich chocolate and ice-cream."
+  }
+];
+      const menu = document.querySelector("#menu")
+const html = items.map((ele, idx) => `
+  <div class="flex flex-wrap items-center gap-5 sm:my-8 mx-2">
+    <img class="sm:w-40 sm:h-28 object-cover rounded-lg" src="./assets/menu${idx + 1}.jpg" alt="${ele.title}" />
+    <div class="flex flex-col h-25">
+      <h1 class="text-yellow-400 h-8 text-lg font-semibold tracking-wide">${ele.title}</h1>
+      <p class="text-gray-300 text-sm w-64 leading-5">${ele.desc}</p>
+    </div>
+  </div>
+`).join("");
+
+menu.innerHTML = html;
+
+      
+    </script>
+  </body>
+</html>
